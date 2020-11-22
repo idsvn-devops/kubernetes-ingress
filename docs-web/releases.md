@@ -8,7 +8,7 @@ CHANGES:
 * Fix deployment of ingressclass resource via helm on some versions of Kubernetes.
 * Update the base ubi images to 8.3.
 * Renew CA cert for egress-mtls example.
-* Add imagePullSecretName support to helm chart.
+* Add `controller.serviceAccount.imagePullSecretName` parameter to the helm chart. **Note**: `controller.serviceAccount.imagePullSecrets` is deprecated and will be removed in the future `1.10.0` release.
 
 HELM CHART:
 * The version of the Helm chart is now 0.7.1.
